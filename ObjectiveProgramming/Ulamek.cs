@@ -3,8 +3,18 @@ namespace ObjectiveProgramming
 {
     public class Ulamek : IEquatable<Ulamek>, IComparable<Ulamek>
     {
-        private int licznik;
-        private int mianownik;
+        private int _licznik;
+        public int licznik
+        {
+            get => _licznik;
+            set => _licznik = value;
+        }
+        private int _mianownik;
+        private int mianownik
+        {
+            get => _mianownik;
+            set => _mianownik = value;
+        }
 
         public Ulamek() { }
         public Ulamek(int number1, int number2)
@@ -17,6 +27,16 @@ namespace ObjectiveProgramming
         {
             licznik = prev.licznik;
             mianownik = prev.mianownik;
+        }
+
+        public override bool Equals(Ulamek ulamek)
+        {
+            return ulamek.licznik == licznik && ulamek.mianownik == mianownik;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
 
         public override string ToString()
