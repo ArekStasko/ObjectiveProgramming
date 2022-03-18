@@ -1,6 +1,5 @@
 ﻿using NUnit.Framework;
 using FluentAssertions;
-using Lab_02;
 using Lab_02.data;
 using Lab_02.models;
 
