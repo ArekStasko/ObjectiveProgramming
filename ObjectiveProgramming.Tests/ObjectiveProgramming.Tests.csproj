@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Lab-02\Lab-02.csproj" />
     <ProjectReference Include="..\ObjectiveProgramming\ObjectiveProgramming.csproj" />
   </ItemGroup>
 
